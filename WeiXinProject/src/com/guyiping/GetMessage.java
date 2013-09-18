@@ -26,11 +26,11 @@ public class GetMessage {
 			
 			
 			String[] UserInput = UserInputContent.split(" ");
-			int userInputSize = UserInput.length;
+			int userInputSize = UserInput.length ;
 			
 			boolean webStatus = GetBusInfo.getInstance().isQueryNormal();
 			if (!webStatus) {
-				return "呜呜呜，公交公司网站不理小助手，真讨厌~，请稍后再试";
+				return " 呜呜呜，公交公司网站不理小助手，真讨厌~，请稍后再试";
 			}
 			
 			String busno = GetBusInfo.getInstance().autoConfirmBusNo(UserInput[0]);
